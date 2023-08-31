@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* .content-window {
+  background-color: rgb(161, 161, 161);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: rgb(46, 0, 131) !important; 
+  font-size: calc(8.5px + 1vmin) !important;
+  min-width: 400px;
+  width: 100%;
+  height: 375px;
+  z-index: 10 !important;
+  opacity: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  transition: 0.7s ease-in-out;
+  transform: translateX(0%);
+} */
