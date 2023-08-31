@@ -21,7 +21,7 @@ class App extends Component {
     const { paycheckAmount, payFrequency, accountBalance, budgetType } = this.state;
     const totalIncome = parseFloat(paycheckAmount) * parseInt(payFrequency);
     let newAdvice = '';
-
+    // *********************** START WITH THE BUDGET TYPES ******************************
     if (budgetType === 'save') {
       if (totalIncome >= parseFloat(accountBalance)) {
         newAdvice = 'You can save all of your income!';
