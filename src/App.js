@@ -64,7 +64,7 @@ class App extends Component {
           <h1>Intuitive Budget Calculator</h1>
           <h3>This tool will allow you to quickly budget your income.</h3>
           <h5>Choose between a Light(30%), Normal(50%), or a Strict(70%) budget!</h5>
-          <h5>(If you'd simply like to calculate a paycheck, please put zero(0) in both Account Balance and Bills and Expenses Amount.)</h5>
+          <h5>(If you'd like to simply calculate a paycheck, please put zero(0) in both Account Balance and Bills and Expenses Amount.)</h5>
           <div className="result">{advice}</div>
           <form className="form" onSubmit={this.handleSubmit}>
             <label>Account Balance: $</label>
