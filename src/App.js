@@ -84,6 +84,7 @@ class App extends Component {
             </select>
             <button type="submit">Calculate</button>
           </form>
+          <p>created by: U. Hector Atto</p>
         </div>
       </div>
     );
