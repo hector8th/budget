@@ -28,9 +28,10 @@
 .result {
   text-align: center;
   width: 200px;
-  color:rgb(78, 0, 78);
+  color:rgb(131, 0, 131);
   padding-bottom: 5%;
   font-weight: bold;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 /* .content-window {
   background-color: rgb(161, 161, 161);
