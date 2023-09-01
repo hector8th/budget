@@ -1,5 +1,5 @@
 .App {
-  height: 625px;
+  height: 100%;
   width: 100%;
   text-align: center;
   font-size: calc(10px + 1.5vmin);
@@ -29,10 +29,9 @@
 .result {
   text-align: center;
   width: 200px;
-  color:rgb(131, 0, 131);
+  color:rgb(83, 0, 131);
   padding-bottom: 5%;
-  /* font-weight: bold; */
-  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  font-weight: bold;
 }
 /* .content-window {
   background-color: rgb(161, 161, 161);
