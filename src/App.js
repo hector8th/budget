@@ -23,6 +23,7 @@ class App extends Component {
     const newBalance = parseFloat(accountBalance) + totalIncome;
     const moneySaved = newBalance * (parseInt(budgetType) / 10);
     const payDiff = (newBalance - moneySaved).toFixed(2);
+    const balanceDiff = newBalance - bills;
     let newAdvice = '';
 
     if (budgetType === '3') {
@@ -31,30 +32,30 @@ class App extends Component {
         \nYour Balance before your Bills/Expenses is $${newBalance}, so you can spend up to $${payDiff}!`;
       } else if ((payFrequency >= 1) && (moneySaved <= bills)) {
         newAdvice = `SLOW DOWN!!!\nYou need to save your money!!!
-          \nYour Balance($${newBalance}) will not survive on this budget!!!
-          \nYou will only manage to save $${(bills - moneySaved).toFixed(2)}!!!`;
+          \nYour Balance($${newBalance}) will not survive on this budget considering your Bills($${bills}) are more than what you saved!!!
+          \nAt 30%, your Balance will be $${balanceDiff.toFixed(2)} after your Bills are due!!!`;
       } else {
         newAdvice = `Please enter a correct number for Times Paid.`;
       }
     } else if (budgetType === '5') {
       if ((payFrequency >= 1) && (moneySaved > bills)) {
-        newAdvice = `Light Budget(30%)!
+        newAdvice = `Normal Budget(50%)!
         \nYour Balance before your Bills/Expenses is $${newBalance}, so you can spend up to $${payDiff}!`;
       } else if ((payFrequency >= 1) && (moneySaved <= bills)) {
         newAdvice = `SLOW DOWN!!!\nYou need to save your money!!!
-          \nYour Balance($${newBalance}) will not survive on this budget!!!
-          \nYou will only manage to save $${(bills - moneySaved).toFixed(2)}!!!`;
+          \nYour Balance($${newBalance}) will not survive on this budget considering your Bills($${bills}) are more than what you saved!!!
+          \nAt 50%, your Balance will be $${balanceDiff.toFixed(2)} after your Bills are due!!!`;
       } else {
         newAdvice = `Please enter a correct number for Times Paid.`;
       }
     } else if (budgetType === '7') {
       if ((payFrequency >= 1) && (moneySaved > bills)) {
-        newAdvice = `Light Budget(30%)!
+        newAdvice = `Strict Budget(70%)!
         \nYour Balance before your Bills/Expenses is $${newBalance}, so you can spend up to $${payDiff}!`;
       } else if ((payFrequency >= 1) && (moneySaved <= bills)) {
         newAdvice = `SLOW DOWN!!!\nYou need to save your money!!!
-          \nYour Balance($${newBalance}) will not survive on this budget!!!
-          \nYou will only manage to save $${(bills - moneySaved).toFixed(2)}!!!`;
+          \nYour Balance($${newBalance}) will not survive on this budget considering your Bills($${bills}) are more than what you saved!!!
+          \nAt 70%, your Balance will be $${balanceDiff.toFixed(2)} after your Bills are due!!!`;
       } else {
         newAdvice = `Please enter a correct number for Times Paid.`;
       }
