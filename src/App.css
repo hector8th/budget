@@ -3,6 +3,7 @@
   width: 100%;
   text-align: center;
   font-size: calc(10px + 1.5vmin);
+  background-color: rgb(146, 146, 146);
 }
 
 /* ***************************************************************************************************** */
@@ -30,7 +31,7 @@
   width: 200px;
   color:rgb(131, 0, 131);
   padding-bottom: 5%;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 /* .content-window {
