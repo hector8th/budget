@@ -50,7 +50,7 @@ class App extends Component {
         newAdvice = `Please enter a correct number for Times Paid.`;
       }
     } else {
-      newAdvice = 'Please, choose a proper Budget type and make sure you entered correct values.';
+      newAdvice = 'Please, choose a proper Budget type and make sure you enter correct values.';
     }
     this.setState({ advice: newAdvice });
   };
