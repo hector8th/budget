@@ -26,7 +26,6 @@ class App extends Component {
     const balanceDiff = newBalance - bills;
     let newAdvice = '';
 
-    // TWEAK THIS SO THAT IT SHOWS YOUR BALANCE, THE REMAINDER AFTER BILLS, AND HOW MUCH OF THAT REMAINDER IS FOR SPENDING
     if (budgetType === '3') {
       if ((payFrequency >= 1) && (moneySaved >= bills)) {
         newAdvice = `Light Budget(30%)!
