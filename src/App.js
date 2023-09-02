@@ -31,7 +31,7 @@ class App extends Component {
       if ((payFrequency >= 1) && (moneySaved >= bills)) {
         newAdvice = `Light Budget(30%)!
         \nYour Balance before your Bills/Expenses is $${newBalance}!
-        \nYou will be left with $${balanceDiff}, so you can spend up to $${(balanceDiff * 0.7).toFixed(2)}!`;
+        \nYou will be left with $${balanceDiff.toFixed(2)}, so you can spend up to $${(balanceDiff * 0.7).toFixed(2)}!`;
       } else if ((payFrequency >= 1) && (moneySaved < bills)) {
         newAdvice = `SLOW DOWN!!!\nYou need to save your money!!!
           \nYour Balance($${newBalance})(100%) will not survive on this budget considering your Bills($${bills}) are more than what you can save!!!
@@ -43,7 +43,7 @@ class App extends Component {
       if ((payFrequency >= 1) && (moneySaved >= bills)) {
         newAdvice = `Normal Budget(50%)!
         \nYour Balance before your Bills/Expenses is $${newBalance}!
-        \nYou will be left with $${balanceDiff}, so you can spend up to $${(balanceDiff * 0.5).toFixed(2)}!`;
+        \nYou will be left with $${balanceDiff.toFixed(2)}, so you can spend up to $${(balanceDiff * 0.5).toFixed(2)}!`;
       } else if ((payFrequency >= 1) && (moneySaved < bills)) {
         newAdvice = `SLOW DOWN!!!\nYou need to save your money!!!
           \nYour Balance($${newBalance})(100%) will not survive on this budget considering your Bills($${bills}) are more than what you can save!!!
@@ -55,7 +55,7 @@ class App extends Component {
       if ((payFrequency >= 1) && (moneySaved >= bills)) {
         newAdvice = `Strict Budget(70%)!
         \nYour Balance before your Bills/Expenses is $${newBalance}!
-        \nYou will be left with $${balanceDiff}, so you can spend up to $${(balanceDiff * 0.3).toFixed(2)}!`;
+        \nYou will be left with $${balanceDiff.toFixed(2)}, so you can spend up to $${(balanceDiff * 0.3).toFixed(2)}!`;
       } else if ((payFrequency >= 1) && (moneySaved < bills)) {
         newAdvice = `SLOW DOWN!!!\nYou need to save your money!!!
           \nYour Balance($${newBalance})(100%) will not survive on this budget considering your Bills($${bills}) are more than what you can save!!!
